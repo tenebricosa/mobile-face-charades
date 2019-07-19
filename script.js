@@ -317,10 +317,10 @@ class GamePage {
     }
 
     badAnswer(rightAnswer, number) {
-        this.answers[number].bad();
+        number !== null && this.answers[number].bad();
         this.answers[rightAnswer].good();
         setTimeout(() => {
-            this.answers[number].reset();
+            number !== null && this.answers[number].reset();
             this.answers[rightAnswer].reset();
             this.decrementLives();
             if (this.lives > 0) {

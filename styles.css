@@ -437,3 +437,10 @@ th {
 .button-inner {
     background-color: white;
 }
+
+.game-name {
+    color: var(--accent-color);
+    font-size: 80px;
+    margin-top: 30px;
+    font-weight: normal;
+}

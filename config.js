@@ -1,6 +1,6 @@
 ﻿const config = {
     level: "general",
-    time: 20000,
+    time: 5000,
     lives: 3
 };
 
