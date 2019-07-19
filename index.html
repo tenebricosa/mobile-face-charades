@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <title>Контур.Фейс</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
+</head>
+
+<body>
+    <div class="root">
+        <div class="registration page invisible">
+            <img src="img/logo.png" alt="Контур.Фейс" width="350" class="logo" />
+            <div class="registrationContainer">
+                <form class="form">
+                    <!-- <label for="name">Имя и фамилия</label> -->
+                    <input class="block" type="text" id="name" name="name" placeholder="Имя и фамилия" autofocus autocomplete="off" />
+                    <!-- <label for="email">Email</label> -->
+                    <input class="block" type="email" id="email" name="email" placeholder="Email" autocomplete="off" />
+                    <button class="button submit" type="submit">
+                        Поехали
+                    </button>
+                </form>
+            </div>
+            <div style="text-align: center">
+                <select class="levels invisible"></select>
+            </div>
+        </div>
+        <div class="game page invisible">
+            <div class="menu">
+                <div class="lives-wrapper">
+                    Осталось попыток: <span class="lives"></span>
+                </div>
+                <button class="help help5050">Щелчок Таноса</button>
+                <div class="spiner">
+                    <div class="spinner-inner"></div>
+                    <div class="spinner-mask"></div>
+                    <div class="spinner-mask-two"></div>
+                    <div class="timer-wrapper">
+                        <div class="timer"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="task"></div>
+            <div class="description"></div>
+            <div class="answers">
+                <div class="answer-wrapper">
+                    <button class="answer-1 button answer-button">
+                        <div class="button-inner"></div>
+                    </button>
+                    <button class="answer-2 button answer-button">
+                        <div class="button-inner"></div>
+                    </button>
+                </div>
+                <div class="answer-wrapper">
+                    <button class="answer-3 button answer-button">
+                        <div class="button-inner"></div>
+                    </button>
+                    <button class="answer-4 button answer-button">
+                        <div class="button-inner"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="gameover page invisible">
+            <div class="result"></div>
+            <button class="button end">
+                Конец
+            </button>
+        </div>
+    </div>
+    <script src="./config.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
